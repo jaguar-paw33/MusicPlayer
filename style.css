@@ -276,8 +276,31 @@ main::-webkit-scrollbar{
 
 #artist div{
     width:20%;
+    position: relative;
 }
 
+#artist > div::after{
+    content:'';
+    background-image: url('https://cdn2.iconfinder.com/data/icons/multimedia-glyph-black/2048/Play-512.png');
+    background-position: center;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    height:90%;
+    width:90%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(240, 230, 140, 0.445);
+    background-color: rgba(53, 52, 50, 0.383); 
+    top:10px;
+    left:10px;
+    border-radius: 50%;
+    display: none;
+    
+}
+
+#artist > div:hover::after{
+    display: block;
+}
 
 #artist div img{
     border-radius: 50%;
@@ -448,7 +471,7 @@ main::-webkit-scrollbar{
     background-position: center;
     background-size: 50px 50px;
     background-repeat: no-repeat;
-    height:66%;
+    height:80%;
     width:100%;
     position: absolute;
     background-color: rgba(53, 52, 50, 0.383);
