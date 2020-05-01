@@ -541,7 +541,7 @@ main::-webkit-scrollbar{
     text-align: right;
     font-size: 1em;
     font-weight: lighter;
-   
+    position: relative;
 
 }
 
@@ -549,37 +549,35 @@ main::-webkit-scrollbar{
     color:cyan;
     padding-top: 10px;
     padding-left: 20px;
-    position: relative;
+    
 }
 
 #queue #dropdown-icon span i{
     font-size:0.4em;
-    
 } 
 
 #dropdown-menu{
     height:auto;
-    width:1000%;
+    width:120%;
     background-color: rgb(236, 234, 234);
     position: absolute;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    left:-250px;
     top:50px;
+    right: -40px;
     display: none;
 }
 
 #dropdown-menu div{
     padding-left: 10px;
     margin-top: 10px;
-    height:40px;
+    height:50px;
     color: black;
     width:70%;
     display: flex;
-    flex-flow: row;
-    padding:10px
+    margin-top: 20px;
 }
 
 #break{
@@ -590,9 +588,8 @@ main::-webkit-scrollbar{
     border: 1px solid rgb(155, 148, 148);
 }
 
-#queue #dropdown-icon:hover #dropdown-menu{
+#queue #dropdown:hover #dropdown-menu{
     display: flex;
-    cursor: pointer;
 }
 
 
