@@ -246,6 +246,8 @@ main::-webkit-scrollbar{
 
 
 
+
+
 .release-icon div:nth-child(2n){
     font-size: 0.8em;
 }
@@ -355,7 +357,7 @@ main::-webkit-scrollbar{
     width: 80%;
     height:80%;
     border-radius: 50%;
-
+    opacity: 0.6;
 }
 
 #stations-list div span{
@@ -368,6 +370,7 @@ main::-webkit-scrollbar{
     height:100%;
     width:100%;
     border-radius: 10px !important;
+    opacity: 1 !important;
     box-shadow: 0px 0px 20px 0.5px violet;
 }
 
@@ -458,36 +461,10 @@ main::-webkit-scrollbar{
 
 }
 
-
 .latest-item div{
    height:70%;
    width:18%;
-   position: relative;
 }
-
-.latest-item div::after{
-    content:"";
-    background-image: url('https://cdn2.iconfinder.com/data/icons/multimedia-glyph-black/2048/Play-512.png');
-    background-position: center;
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-    height:80%;
-    width:100%;
-    position: absolute;
-    background-color: rgba(53, 52, 50, 0.383);
-    z-index: 2;
-    top:0;
-    left:0;
-    border-radius: 3px;
-    display: none;
-}
-
-.latest-item div:hover::after{
-    display: block;
-    cursor: pointer;
- }
-
-
 
 .latest-item div img{
     height:100%;
@@ -525,6 +502,7 @@ main::-webkit-scrollbar{
     flex-flow:row nowrap;
     justify-content: space-around;
     margin-top: 2in;
+    margin-bottom: 50px;
 }
 
 #queue #heading{
@@ -605,7 +583,6 @@ main::-webkit-scrollbar{
 
 #playlist-content table{
     width:100%;
-    margin-top: 40px;
     margin-left: 20px;
     font-size: 0.8em;
     color:grey;
@@ -628,7 +605,7 @@ main::-webkit-scrollbar{
     height:70px;
     vertical-align: middle;
     border-radius: 4px;
-    /* box-shadow: 0px 0px 80px 0.5px rgba(255,255,255,0.5); */
+    box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.13);
 }
 
 #cover-name{
