@@ -495,18 +495,60 @@ main::-webkit-scrollbar{
     text-align: right;
     font-size: 1em;
     font-weight: lighter;
+   
 
 }
 
 #queue #dropdown-icon{
     color:cyan;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: relative;
 }
 
 #queue #dropdown-icon span i{
     font-size:0.4em;
     
 } 
+
+#dropdown-menu{
+    height:auto;
+    width:1000%;
+    background-color: rgb(236, 234, 234);
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    left:-250px;
+    top:50px;
+    display: none;
+}
+
+#dropdown-menu div{
+    padding-left: 10px;
+    margin-top: 10px;
+    height:40px;
+    color: black;
+    width:70%;
+    display: flex;
+    flex-flow: row;
+    padding:10px
+}
+
+#break{
+    height:0 !important;
+    width:90% !important;
+    padding:0 !important;
+    margin: 0 !important;
+    border: 1px solid rgb(155, 148, 148);
+}
+
+#queue #dropdown-icon:hover #dropdown-menu{
+    display: flex;
+    cursor: pointer;
+}
+
 
 #playlist-content{
     height:75vh;
