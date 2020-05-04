@@ -161,4 +161,18 @@
     margin-right: 20px;
 }
 
+/**********SIMILAR ARTISTS**********/
 
+#similar-artists{
+    margin-top: 2in;
+    height:52vh;
+    width:30%;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid chartreuse;
+}
+
+#similar-artists div{
+    border: 2px solid goldenrod;
+}
+#similar-artists 

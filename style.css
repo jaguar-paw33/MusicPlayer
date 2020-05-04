@@ -11,14 +11,13 @@ body{
 }
 
 
-
 /*****************NAVBAR************/
+
 
 #navbar{
     position: fixed;
     top:0;
 }
-
 
 #navbar table{
     margin: 30px 50px 50px;
@@ -75,7 +74,6 @@ body{
     
 }
 
-
 #voice-search{
     border-radius: 0 5px 4px 0;
     margin-right: 50px;
@@ -91,7 +89,6 @@ body{
 #search-icon  a i{
     color:white !important;
 }
-
 
 #notification{
     width:50px;
@@ -112,9 +109,12 @@ body{
     width:100px;
 }
 
+
 /*****************NAVBAR ENDS************/
 
+
 /*****************CAROUSEL**************/
+
 
 main{
     margin-left: 1.4in;
@@ -136,14 +136,11 @@ main::-webkit-scrollbar{
     justify-content: center;
     align-items: center;
     height: 35vh;
-    max-width:90% !important;
 }
 
 .carousel-image{
     height:90%;
-    margin: 0px 10px;
     width:85%;
-    
 }
 
 .carousel-image img{
@@ -163,29 +160,33 @@ main::-webkit-scrollbar{
 
 #img-1{
     transform: rotateY(20deg);
+    margin-right: 10px;
 }
 
 #img-3{
+    margin-left: 10px;
     transform: rotateY(-20deg);
 }
 
 
 /**********CAROUSEL ENDS************/
 
+
 /**********LATEST RELEASE***********/
+
 
 #latest-release{
     width: 90%;
-    margin-top: 1.3in;
+    margin-top: 1in;
     height:auto;
     display: flex;
     flex-flow: column nowrap;
 }
 
-
-#release-head span{
+ .heading{
     font-size: 1.5em;
     font-weight: bold;
+    margin-left: -4px !important;
 }
 
 #release-content{
@@ -196,7 +197,6 @@ main::-webkit-scrollbar{
     display:flex;
     flex-flow:row wrap;
 }
-
 
 .release-item{
 
@@ -214,12 +214,10 @@ main::-webkit-scrollbar{
     width:40%;
 }
 
-
 .release-img img{
     height:100%;
     width:100%;
 }
-
 
 .release-info{
 
@@ -232,7 +230,6 @@ main::-webkit-scrollbar{
    font-size: 1em;
 }
 
-
 .release-icon{
     color: grey;
     margin-bottom: 120px;
@@ -244,15 +241,13 @@ main::-webkit-scrollbar{
     align-items: center;
 }
 
-
-
-
-
 .release-icon div:nth-child(2n){
     font-size: 0.8em;
 }
 
+
 /*********LATEST RELEASES ENDS********/
+
 
 /*********POPULAR ARTISTS**********/
 
@@ -263,29 +258,27 @@ main::-webkit-scrollbar{
     flex-flow: column nowrap;
 }
 
-#artist{
+#popular-artists-content{
     display: flex;
     flex-flow: row nowrap;
 }
 
-#artist-head{
+.heading {
     margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
 }
 
-#artist div{
+#popular-artists-content div{
     width:20%;
     position: relative;
 }
 
-#artist > div::after{
+#popular-artists-content > div::after{
     content:'';
     background-image: url('https://cdn2.iconfinder.com/data/icons/multimedia-glyph-black/2048/Play-512.png');
     background-position: center;
-    background-size: 70px 70px;
+    background-size: 50% 40%;
     background-repeat: no-repeat;
     height:90%;
     width:90%;
@@ -300,25 +293,28 @@ main::-webkit-scrollbar{
     
 }
 
-#artist > div:hover::after{
+#popular-artists-content > div:hover::after{
     display: block;
 }
 
-#artist div img{
+#popular-artists-content div img{
     border-radius: 50%;
     height:90%;
     width:90%;
     margin: 10px 10px;
 }
 
-#artist div div{
+#popular-artists-content div div{
     text-align: center;
     width:95%;
     font-weight: bold;
 }
 
 
+
 /*********POPULAR ARTISTS ENDS******/
+
+
 
 /*********STATIONS**********/
 
@@ -337,7 +333,7 @@ main::-webkit-scrollbar{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    /* border: 2px solid cyan; */
+   
 }
 
 #stations-list div{
@@ -378,7 +374,9 @@ main::-webkit-scrollbar{
 /*********STATIONS ENDS******/
 
 
+
 /*********OCCASSION**********/
+
 
 #occasion{
     display: flex;
@@ -421,7 +419,6 @@ main::-webkit-scrollbar{
     background: radial-gradient(rgba(255, 255, 255, 0.5) 10%, rgba(165, 42, 42, 0.5));
 }
 
-
 #occasion div:nth-child(2n+1){
     margin: 0;
 
@@ -447,12 +444,14 @@ main::-webkit-scrollbar{
     z-index: 3;
 }
 
+
 /*********OCCASION ENDS*******/
+
 
 /**********LATEST RELEASES******/
 
 
-.latest-item{
+.latest-by-language{
     display: flex;
     flex-direction: row nowrap;
     justify-content: space-between;
@@ -461,23 +460,23 @@ main::-webkit-scrollbar{
 
 }
 
-.latest-item div{
+.latest-by-language div{
    height:70%;
    width:18%;
 }
 
-.latest-item div img{
+.latest-by-language div img{
     height:100%;
     width:100%;
     border-radius: 3px;
 }
 
-.latest-item div span{
+.latest-by-language div span{
     font-size: 0.6em;
     color:grey;
 }
 
-.latest-item div span b{
+.latest-by-language div span b{
     font-size: 1.2rem;
     color:white;
     
@@ -487,7 +486,7 @@ main::-webkit-scrollbar{
 /**********PLAYLIST*************/
 
 #playlist{
-    /* border: 2px solid black; */
+
     width:20%;
     margin-left: 30px;
     display: inline-block;
@@ -505,8 +504,10 @@ main::-webkit-scrollbar{
     margin-bottom: 50px;
 }
 
-#queue #heading{
+#queue .heading{
     color:white;
+    margin-top: 2.5px;
+    margin-left: 2px;
     font-size: 1.5em;
     font-weight: bolder;
 }
@@ -592,53 +593,64 @@ main::-webkit-scrollbar{
     padding-bottom:25px;
 }
 
-#cover-no{
+.cover-no{
     width:10px;
 }
 
- #cover-img{
+.cover-img{
     width:120px !important;
-    padding-left: 10px;
+    padding-left: 20px;
+    position: relative;
 }
 
-#cover-img img{
+.cover-img::after{
+    content:"";
+    background-image: url('https://cdn2.iconfinder.com/data/icons/multimedia-glyph-black/2048/Play-512.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    height:70px;
+    width:70px;
+    margin-left: 20px;
+    background-color: rgba(95, 98, 91, 0.452);
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.cover-img:hover::after{
+    display: inline-block;
+}
+
+
+.cover-img img{
     height:70px;
     vertical-align: middle;
     border-radius: 4px;
     box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.13);
 }
 
-#cover-name{
+.cover-name{
     padding-left: 15px;
 }
- #cover-name span{
+
+.cover-name span{
      color:white;
      font-size: 1.2em;
      font-weight: bold;
  }
 
- #cover-icon span{
+ .cover-icon span{
     font-size: 1.2em;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*********PLAYLIST ENDS**********/
 
-/**********PLAYER***************/
+
+
+/* *********PLAYER**************
 
 #player{
     border: 2px solid black;
@@ -650,7 +662,6 @@ main::-webkit-scrollbar{
     flex-flow: row nowrap;
     justify-content: center;
 }
-
 
 #dashboard{
     height:80%;
@@ -666,13 +677,10 @@ main::-webkit-scrollbar{
    
 }
 
-
 #dashboard table tr{
     height: 100%;
     width:100%;
 }
-
-
 
 #dashboard-image{
     padding:0;
@@ -683,5 +691,5 @@ main::-webkit-scrollbar{
 #dashboard-image img{
     height:100%;
     vertical-align: top;
-}
+} */
 
