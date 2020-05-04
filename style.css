@@ -6,8 +6,6 @@ body{
     margin:0;
     scroll-behavior: smooth;
     overflow: hidden;
-    display: flex;
-    flex-flow: row nowrap;
 }
 
 
@@ -546,6 +544,7 @@ main::-webkit-scrollbar{
     align-items: center;
     top:50px;
     right: -40px;
+    z-index: 2;
     display: none;
 }
 
@@ -613,7 +612,7 @@ main::-webkit-scrollbar{
     width:70px;
     margin-left: 20px;
     background-color: rgba(95, 98, 91, 0.452);
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     left: 0;
     display: none;

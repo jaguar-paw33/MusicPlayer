@@ -1,3 +1,12 @@
+/* body{
+    overflow:visible;
+} */
+
+#artist-screen{
+    width:60%;
+    margin-right: 3%;
+}
+
 
 .artist-details{
     background-color: #1f1642;
@@ -5,19 +14,19 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    height:70%;
+    height:56%;
     width:auto;
     margin-bottom: 10px;
 }
 
-.artist-details .img{
-    height:100%;
+.artist-details .artist-img{
+    height:100% !important;
     width:60%;
     margin-right: 10px;
     position: relative;
 }
 
-.artist-details .img::after{
+.artist-details .artist-img::after{
     content: "";
     height:100%;
     width:100%;
@@ -28,14 +37,16 @@
 }
 
 
-.artist-details .img img{
+.artist-details .artist-img img{
     height:100%;
     width:100%;
 }
 
 
 .artist-details .intro{
-    height:70%;
+    display: flex;
+    justify-content: center;
+    height:100%;
     width:100%;
 }
 
@@ -54,7 +65,7 @@
 
 .intro .head .name{
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
 }
 .intro .head .followers{
@@ -70,7 +81,7 @@
 
 .intro .links{
     width:50%;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -164,15 +175,255 @@
 /**********SIMILAR ARTISTS**********/
 
 #similar-artists{
-    margin-top: 2in;
-    height:52vh;
-    width:30%;
+    width: 25%;
+    margin-top: 1.8in;
     display: inline-block;
     vertical-align: top;
-    border: 2px solid chartreuse;
 }
 
-#similar-artists div{
-    border: 2px solid goldenrod;
+#similar-artists .heading{
+    margin: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
 }
-#similar-artists 
+
+#view-all{
+    font-size: 0.6em;
+    font-weight: lighter;
+    position: absolute;
+    right:105px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+#similar-artists-content{
+    overflow-y: scroll;
+    height:32vh;
+    width:100%;
+    max-width:100% !important;
+    margin-top: 30px;
+    display:flex;
+    padding:0;
+    padding-top: 10px;
+    flex-flow:column nowrap;
+}
+
+#similar-artists-content::-webkit-scrollbar{
+    display: none;
+}
+
+.similar-artists-item{
+    width:100%;
+    flex-grow: 1;
+    height:40%;
+    display: flex;
+    margin-bottom: 30px;
+    flex-flow: row nowrap;
+}
+
+.similar-artists-img{
+    height:100%;
+    width:30%;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.similar-artists-img img{
+    border-radius: 8px;
+    height:100%;
+    width:100%;
+}
+
+.similar-artists-info{
+    height:100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width:40%;
+    margin-left: 5%;
+}
+
+.similar-artists-info span{
+   font-size: 0.8em;
+}
+
+.similar-artists-icon{
+    color: grey;
+    width:20%;
+    padding-left: 15%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.similar-artists-icon div:nth-child(2n){
+    font-size: 0.8em;
+}
+
+
+/*********SIMILAR ARTISTS ENDS********/
+
+
+/**********PLAYLIST*************/
+
+#playlist{
+    width:30%;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    right:0;
+    box-sizing: border-box;
+    
+}
+
+#queue{
+    width:95%;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    margin-top: 2in;
+    margin-bottom: 50px;
+}
+
+#queue .heading{
+    color:white;
+    margin-top: 2.5px;
+    margin-left: 2px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#queue #dropdown{
+    color:cyan;
+    padding-top: 12px;
+    width:60% !important;
+    margin: 0px;
+    text-align: right;
+    font-size: 1em;
+    font-weight: lighter;
+    position: relative;
+
+}
+
+#queue #dropdown-icon{
+    color:cyan;
+    padding-top: 10px;
+    padding-left: 20px;
+    
+}
+
+#queue #dropdown-icon span i{
+    font-size:0.4em;
+} 
+
+#dropdown-menu{
+    height:auto;
+    width:120%;
+    background-color: rgb(236, 234, 234);
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    top:50px;
+    right: -40px;
+    display: none;
+}
+
+#dropdown-menu div{
+    padding-left: 10px;
+    margin-top: 10px;
+    height:50px;
+    color: black;
+    width:70%;
+    display: flex;
+    margin-top: 20px;
+}
+
+#break{
+    height:0 !important;
+    width:90% !important;
+    padding:0 !important;
+    margin: 0 !important;
+    border: 1px solid rgb(155, 148, 148);
+}
+
+#queue #dropdown:hover #dropdown-menu{
+    display: flex;
+}
+
+
+#playlist-content{
+    height:75vh;
+    overflow-y: scroll;
+}
+
+#playlist-content::-webkit-scrollbar{
+    display: none;
+}
+
+
+#playlist-content table{
+    width:100%;
+    margin-left: 20px;
+    font-size: 0.8em;
+    color:grey;
+}
+
+#playlist-content table tr td{
+    padding-bottom:25px;
+}
+
+.cover-no{
+    width:10px;
+}
+
+.cover-img{
+    width:120px !important;
+    padding-left: 20px;
+    position: relative;
+}
+
+.cover-img::after{
+    content:"";
+    background-image: url('https://cdn2.iconfinder.com/data/icons/multimedia-glyph-black/2048/Play-512.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    height:70px;
+    width:70px;
+    margin-left: 20px;
+    background-color: rgba(95, 98, 91, 0.452);
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.cover-img:hover::after{
+    display: inline-block;
+}
+
+
+.cover-img img{
+    height:70px;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.13);
+}
+
+.cover-name{
+    padding-left: 15px;
+}
+
+.cover-name span{
+     color:white;
+     font-size: 1.2em;
+     font-weight: bold;
+ }
+
+ .cover-icon span{
+    font-size: 1.2em;
+}
