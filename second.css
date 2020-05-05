@@ -1,12 +1,7 @@
-/* body{
-    overflow:visible;
-} */
-
 #artist-screen{
-    width:60%;
+    width:60% ;
     margin-right: 3%;
 }
-
 
 .artist-details{
     background-color: #1f1642;
@@ -36,12 +31,10 @@
     left: 0;
 }
 
-
 .artist-details .artist-img img{
     height:100%;
     width:100%;
 }
-
 
 .artist-details .intro{
     display: flex;
@@ -73,11 +66,9 @@
     padding-top: 20px;
 }
 
-
 .intro .info{
     font-size: 0.8em;
 }
-
 
 .intro .links{
     width:50%;
@@ -177,7 +168,8 @@
 #similar-artists{
     width: 25%;
     margin-top: 1.8in;
-    display: inline-block;
+    display: flex;
+    flex-flow: column nowrap;
     vertical-align: top;
 }
 
@@ -187,7 +179,7 @@
     font-weight: bold;
 }
 
-#view-all{
+.view-all{
     font-size: 0.6em;
     font-weight: lighter;
     position: absolute;
@@ -265,114 +257,34 @@
 /*********SIMILAR ARTISTS ENDS********/
 
 
-/**********PLAYLIST*************/
+/**********RECENTLY PLAYED*************/
 
-#playlist{
-    width:30%;
-    margin-left: 30px;
+#recently-played{
+    margin-top: 30px;;
+    width:100%;
     display: inline-block;
-    vertical-align: top;
-    position: relative;
-    right:0;
-    box-sizing: border-box;
-    
 }
 
-#queue{
-    width:95%;
-    display: flex;
-    flex-flow:row nowrap;
-    justify-content: space-around;
-    margin-top: 2in;
-    margin-bottom: 50px;
+#recently-played .heading{
+   margin-bottom: 50px;
 }
 
-#queue .heading{
-    color:white;
-    margin-top: 2.5px;
-    margin-left: 2px;
-    font-size: 1.5em;
-    font-weight: bolder;
-}
-
-#queue #dropdown{
-    color:cyan;
-    padding-top: 12px;
-    width:60% !important;
-    margin: 0px;
-    text-align: right;
-    font-size: 1em;
-    font-weight: lighter;
-    position: relative;
-
-}
-
-#queue #dropdown-icon{
-    color:cyan;
-    padding-top: 10px;
-    padding-left: 20px;
-    
-}
-
-#queue #dropdown-icon span i{
-    font-size:0.4em;
-} 
-
-#dropdown-menu{
-    height:auto;
-    width:120%;
-    background-color: rgb(236, 234, 234);
-    position: absolute;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    top:50px;
-    right: -40px;
-    display: none;
-}
-
-#dropdown-menu div{
-    padding-left: 10px;
-    margin-top: 10px;
-    height:50px;
-    color: black;
-    width:70%;
-    display: flex;
-    margin-top: 20px;
-}
-
-#break{
-    height:0 !important;
-    width:90% !important;
-    padding:0 !important;
-    margin: 0 !important;
-    border: 1px solid rgb(155, 148, 148);
-}
-
-#queue #dropdown:hover #dropdown-menu{
-    display: flex;
-}
-
-
-#playlist-content{
-    height:75vh;
+#recently-played-content{
+    height:20vh;
     overflow-y: scroll;
 }
 
-#playlist-content::-webkit-scrollbar{
+#recently-played-content::-webkit-scrollbar{
     display: none;
 }
 
-
-#playlist-content table{
+#recently-played-content table{
     width:100%;
-    margin-left: 20px;
     font-size: 0.8em;
     color:grey;
 }
 
-#playlist-content table tr td{
+#recently-played-content table tr td{
     padding-bottom:25px;
 }
 
@@ -381,7 +293,7 @@
 }
 
 .cover-img{
-    width:120px !important;
+    max-width: 10px !important;
     padding-left: 20px;
     position: relative;
 }
@@ -396,7 +308,7 @@
     width:70px;
     margin-left: 20px;
     background-color: rgba(95, 98, 91, 0.452);
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     left: 0;
     display: none;
@@ -406,16 +318,16 @@
     display: inline-block;
 }
 
-
 .cover-img img{
     height:70px;
+    width: 100%;
     vertical-align: middle;
     border-radius: 4px;
     box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.13);
 }
 
 .cover-name{
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .cover-name span{
@@ -423,6 +335,10 @@
      font-size: 1.2em;
      font-weight: bold;
  }
+
+.cover-icon{
+    text-align: center;
+}
 
  .cover-icon span{
     font-size: 1.2em;
