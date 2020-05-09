@@ -96,6 +96,12 @@
     margin-top: 10px;
 }
 
+
+.intro .links .follow {
+    margin-left: 20px;
+}
+
+
 .intro .links .follow a{
     text-decoration: none;
     color:white;
@@ -308,8 +314,9 @@
     width:70px;
     margin-left: 20px;
     background-color: rgba(95, 98, 91, 0.452);
-    z-index: 1;
+    z-index: 3;
     position: absolute;
+    top:0;
     left: 0;
     display: none;
 }
@@ -320,14 +327,14 @@
 
 .cover-img img{
     height:70px;
-    width: 100%;
+    width: 70px;
     vertical-align: middle;
     border-radius: 4px;
     box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.13);
 }
 
 .cover-name{
-    padding-left: 20px;
+    padding-left:50px;
 }
 
 .cover-name span{
@@ -342,4 +349,253 @@
 
  .cover-icon span{
     font-size: 1.2em;
+}
+
+
+@media screen and (max-width:1200px)
+{
+    #release-content{
+        width:100%;
+        height:75%;
+        max-width:100% !important;
+        display:flex;
+        flex-direction: column !important;
+    }
+    
+    .release-item{
+        width:100%;
+        flex-grow: 1;
+        height:20%;
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:1200px)
+{
+
+    #similar-artists{
+        display:none;
+    }
+
+    #navbar table{
+        padding-left: 5px ;
+        padding-right: 5px;
+    }
+
+  
+    main{
+    width: 100% !important;
+    margin-left: 1in !important;
+    margin-right: 1in !;
+    }
+
+}
+
+
+
+@media screen and (max-width:760px){
+
+    
+
+    #playlist-name{
+        display: none;
+    }
+
+    main{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    
+    #navbar table{
+        padding-left: 10px !important;
+        padding-right: 10px;
+    }
+
+    #carousel{
+        height:25vh !important;
+    }
+
+    #release-content{
+        width:100%;
+        height:75%;
+        max-width:100% !important;
+        display:flex;
+        flex-direction: column !important;
+    }
+    
+    .release-item{
+        width:100% !important;
+        flex-grow: 1;
+        height:50%;
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:600px){
+    
+   .album-cover{
+       display: none !important;
+   }
+
+   .album-intro{
+       display: none !important;
+   }
+
+   .album-icons{
+       display: none !important;
+   }
+
+   .player-controls{
+       width:100% !important;
+   }
+   
+   .volume-controls{
+       display: none !important;
+   }
+
+   .artist-details .artist-img{
+       display: none;
+   }
+
+    #player-logo{
+        padding-right: 30px;
+    }    
+    #player-name{
+        display: none;
+    }
+    
+    #playlist-name{
+       display: none;
+    }
+    
+    #search-bar{
+
+        justify-content: flex-start;
+
+        
+    }
+    
+    #search-input{
+        width:100%;
+    }
+    
+    #search-input input:focus{
+        outline:none;
+    }
+  
+    #voice-search{
+ 
+        margin-right: 0;
+    }
+  
+    
+    #notification-icon{
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    #carousel{
+        height:20vh !important;
+    }
+
+
+    #popular-artists{
+        width:100%;
+        height:50vh;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    #popular-artists-content{
+        display: flex;
+        flex-flow: row wrap !important;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .heading {
+        text-align: center;
+    }
+    
+    #popular-artists-content div{
+        width:30%;
+        position: relative;
+    }
+    
+    #popular-artists-content > div::after{
+        height:75%;
+        width:91%;
+        left:9px;
+        top:8.5px;
+    } 
+
+
+    #stations{
+        margin: auto;
+        margin-top: 150px;
+        width:75%;
+        height:200%;
+        margin-bottom: 20px;
+        display: block !important;
+
+    }
+    
+    #stations-list{
+        width: 70%;
+        height:16%;
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+       
+    }
+    
+    #stations-list div{
+        width: 100%;
+        height:100%; 
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1f1642;
+        border-radius: 10px;
+        position: relative;
+    
+    }
+    
+    #occasion{
+        flex-direction: column !important;
+        width:100% !important; 
+        height:70vh;
+        margin-bottom: 80px;
+    }
+
+    #occasion > div{
+        margin:20px;
+    }
+
+    
+}
+
+@media screen and (max-width:510px){
+    #popular-artists-content > div::after{
+        height:71%;
+        width:91%;
+        left:9px;
+        top:8.5px;
+    } 
+
 }
