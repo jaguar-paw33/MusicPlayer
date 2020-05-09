@@ -118,12 +118,11 @@ body{
     width:100px;
 }
 
-
 /*****************NAVBAR ENDS************/
 
 
-/*****************CAROUSEL**************/
 
+/*****************CAROUSEL**************/
 
 main{
     margin-left: 1.4in;
@@ -150,7 +149,7 @@ main::-webkit-scrollbar{
 .carousel-image{
     height:100%;
     width:85%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: relative;
 }
 
@@ -167,7 +166,6 @@ main::-webkit-scrollbar{
     border-radius: 5px;
     box-shadow: 0px 0px 30px 0.5px rgba(255, 255, 255, 0.151);
 }
-
 
 .carousel-image::after{
     content:"";
@@ -189,7 +187,6 @@ main::-webkit-scrollbar{
     display: none !important;
 }
 
-
 #img-1{
     transform: rotateY(20deg);
     margin-right: 10px;
@@ -201,12 +198,10 @@ main::-webkit-scrollbar{
 }
 
 
-
 /**********CAROUSEL ENDS************/
 
 
 /**********LATEST RELEASE***********/
-
 
 #latest-release{
  
@@ -259,7 +254,6 @@ main::-webkit-scrollbar{
     width:100%;
 }
 
-
 .latest-release-play{
     align-items: center;
     justify-content: center;
@@ -275,10 +269,6 @@ main::-webkit-scrollbar{
 .latest-release-play a i {
     color:rgba(255, 255, 255, 0.589);
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.822);
-}
-
-.latest-release-play  a > i + .bottom-player {
-    display: flex;
 }
 
 .release-img:hover::after{
@@ -315,7 +305,6 @@ main::-webkit-scrollbar{
 .release-icon div:nth-child(2n){
     font-size: 0.8em;
 }
-
 
 .latest-release-dropdown-menu{
     height:auto;
@@ -456,7 +445,6 @@ main::-webkit-scrollbar{
 }
 
 
-
 /*********POPULAR ARTISTS ENDS******/
 
 
@@ -513,13 +501,11 @@ main::-webkit-scrollbar{
     box-shadow: 0px 0px 20px 0.5px violet;
 }
 
-
 /*********STATIONS ENDS******/
 
 
 
 /*********OCCASSION**********/
-
 
 #occasion{
     display: flex;
@@ -587,12 +573,10 @@ main::-webkit-scrollbar{
     z-index: 3;
 }
 
-
 /*********OCCASION ENDS*******/
 
 
 /**********LATEST RELEASES******/
-
 
 .latest-by-language{
     display: flex;
@@ -625,7 +609,6 @@ main::-webkit-scrollbar{
     
 }
 
-
 /**********PLAYLIST*************/
 
 #playlist{
@@ -636,7 +619,6 @@ main::-webkit-scrollbar{
     box-sizing: border-box;
     
 }
-
 
 #queue{
     width:100%;
@@ -716,7 +698,7 @@ main::-webkit-scrollbar{
 
 
 #playlist-content{
-    height:75vh;
+    height:62vh;
     overflow-y: scroll;
 }
 
@@ -741,6 +723,7 @@ main::-webkit-scrollbar{
 }
 
 .cover-img{
+    width:70px;
     padding-left: 20px;
     position: relative;
 }
@@ -784,20 +767,16 @@ main::-webkit-scrollbar{
      font-weight: bold;
  }
 
-
  .cover-icon span{
      margin-right: 10px;
     font-size: 1.2em;
 }
 
 
-
 /*********PLAYLIST ENDS**********/
 
 
-
 /**********PLAYER***************/
-
 
 .bottom-player{
     z-index: 10;
@@ -821,20 +800,19 @@ main::-webkit-scrollbar{
     flex-flow: row nowrap;
 }
 
-.album-cover{
+#album-cover{
     height:80px;
     width:80px;
     
 }
 
-.album-cover img{
+#album-cover img{
     height:100%;
     width:100%;
     
 }
 
-
-.album-intro{
+#album-intro{
     margin-left: 10px;
     flex-flow: column nowrap !important;
     justify-content: center;
@@ -843,34 +821,31 @@ main::-webkit-scrollbar{
     
 }
 
-
-.album-icons{
+#album-icons{
     box-sizing: border-box;
     padding-top: 10px;
     margin-left: 10px;
     
 }
 
-.album-icons i{
+#album-icons i{
     margin-left: 10px;
     font-size: 1em;
 }
 
-.player-controls{
+#player-controls{
     flex-flow: column nowrap !important;
     justify-content: center;
     align-items: center;
     width:50%;
     margin: 0 10px;
-    
-
 }
 
-.player-controls div{
+#player-controls div{
     margin: 5px 0;
 }
 
-.controls{
+#controls{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -878,7 +853,7 @@ main::-webkit-scrollbar{
     width:60%;
 }
 
-.track-controls{
+#track-controls{
     width:100%;
 }
 
@@ -888,7 +863,7 @@ main::-webkit-scrollbar{
     cursor: pointer;
 }
 
-.slider{
+#slider{
     -webkit-appearance: none;
     height:8px;
     width:100% ;
@@ -899,13 +874,13 @@ main::-webkit-scrollbar{
     
 }
 
-.slider::-webkit-slider-thumb::after{
+#slider::-webkit-slider-thumb::after{
     height:20px;
     width:20px;
     position: absolute;
 }
 
-.slider::-webkit-slider-thumb{
+#slider::-webkit-slider-thumb{
     position: relative;
     -webkit-appearance: none;
     height:20px;
@@ -916,12 +891,12 @@ main::-webkit-scrollbar{
     cursor: pointer;
 }
 
-.slider:focus{
+#slider:focus{
     outline: none;
     box-shadow: 0px 0px 1px 0.5px white;
 }
 
-.volume-controls{
+#volume-controls{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -929,11 +904,11 @@ main::-webkit-scrollbar{
     min-width: 200px !important;
 }
 
-.volume-controls i{
+#volume-controls i{
     margin:0 5px;
 }
 
-.volume-slider{
+#volume-slider{
     -webkit-appearance: none;
     height:5px; 
     margin-top: 5px;
@@ -942,13 +917,11 @@ main::-webkit-scrollbar{
     margin-right: 10px;
 }
 
-
-.volume-slider:focus{
+#volume-slider:focus{
     outline: none;
 }
 
-
-.volume-slider::-webkit-slider-thumb{
+#volume-slider::-webkit-slider-thumb{
     -webkit-appearance: none;
     height:12px;
     width:12px;
@@ -957,12 +930,12 @@ main::-webkit-scrollbar{
     cursor: pointer;
 }
 
-.volume{
+#volume{
     display: flex;
     align-items: center;
 }
 
-.volume input{
+#volume input{
     margin-left: 10px;
 }
 
@@ -970,7 +943,7 @@ main::-webkit-scrollbar{
     display: flex;
 }
 
-.hide-player{
+#hide-player{
     display: flex;
     flex-flow: column nowrap !important;
     align-items: center;
@@ -979,15 +952,19 @@ main::-webkit-scrollbar{
     color:white; 
 }
 
-.hide-player div:nth-child(2n){
+#hide-player div:nth-child(2n){
    font-size: 0.5em;
 }
 
-.hide-player a{
+#hide-player a{
     text-decoration: none;
     color: white;
 }
 
+
+/*********PLAYER ENDS************/
+
+/*************RESPONSIVE SECTION**************/
 
 @media screen and (max-width:1200px)
 {
@@ -1011,24 +988,22 @@ main::-webkit-scrollbar{
 }
 
 
-
-
 @media screen and (max-width:1200px)
 {
 
-    .album-cover{
+    #album-cover{
         display: none !important;
     }
  
-    .album-intro{
+    #album-intro{
         display: none !important;
     }
  
-    .album-icons{
+    #album-icons{
         display: none !important;
     }
  
-    .player-controls{
+    #player-controls{
 
         margin-right: 30px !important;
     }
@@ -1059,10 +1034,8 @@ main::-webkit-scrollbar{
 }
 
 
-
 @media screen and (max-width:760px){
 
-    
 
     #playlist-name{
         display: none;
@@ -1102,33 +1075,19 @@ main::-webkit-scrollbar{
 }
 
 
-
-
-
-
 @media screen and (max-width:600px){
     
    .album-cover{
        display: none !important;
-   }
+    }
 
    .album-intro{
        display: none !important;
-   }
+    }
 
    .album-icons{
        display: none !important;
-   }
-
-   .player-controls{
-       width:100% !important;
-   }
-   
-   .volume-controls{
-       display: none !important;
-   }
-
-
+    }
 
     #player-logo{
         padding-right: 30px;
@@ -1142,10 +1101,7 @@ main::-webkit-scrollbar{
     }
     
     #search-bar{
-
         justify-content: flex-start;
-
-        
     }
     
     #search-input{
@@ -1246,7 +1202,14 @@ main::-webkit-scrollbar{
         margin:20px;
     }
 
+    #player-controls{
+        width:100% !important;
+    }
     
+    #volume-controls{
+        display: none !important;
+    }
+
 }
 
 @media screen and (max-width:510px){
